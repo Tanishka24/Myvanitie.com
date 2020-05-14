@@ -26,6 +26,9 @@
 
     <link rel="stylesheet" href="css/style.css">
     
+
+
+
 <style>
 body {font-family: Arial, Helvetica, sans-serif;}
 * {box-sizing: border-box;}
@@ -101,8 +104,6 @@ body {font-family: Arial, Helvetica, sans-serif;}
 
 
 
-
-
   </head>
   <body>
   
@@ -161,7 +162,7 @@ body {font-family: Arial, Helvetica, sans-serif;}
               <div class="col-md-10 text-center">
                 <h1 data-aos="fade-up" class="mb-5">We give solutions to all your makeup needs <!-- ffff makeup--> <span class="typed-words"></span></h1>
 
-                <p data-aos="fade-up" data-aos-delay="100"><a href="#" class="btn btn-primary btn-pill"><button class="btn btn-primary btn-sm btn-pill" onclick="openForm()">Book Now</button></a></p>
+                <p data-aos="fade-up" data-aos-delay="100"><a href="#" class="btn btn-primary btn-pill">Book Now</a></p>
               </div>
             </div>
 
@@ -169,31 +170,6 @@ body {font-family: Arial, Helvetica, sans-serif;}
         </div>
       </div>
     </div>  
-
-
-
-<div class="form-popup" id="myForm">
-  <form action="/action_page.php" class="form-container">
-    <h2>Query Form</h2>
-    <label for="name"><b>Name</b></label>
-    <input type="text" placeholder="Enter your name" name="email" required>
-   <label for="number"><b>Contact No.</b></label>
-    <input type="text" placeholder="enter number with country code" name="txtName" required>
-    <label for="text"><b>Package</b></label>
-    <input type="text" placeholder="enter package name" name="psw" required>
-<label for="psw"><b>Number of Makeups</b></label>
-    <input type="text" placeholder="enter in numbers" name="psw" required>
-
-    <button type="submit" class="btn">Send</button>
-    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
-  </form>
-</div>
-
-
-
-
-
-
 
 
 
@@ -343,7 +319,31 @@ body {font-family: Arial, Helvetica, sans-serif;}
 
     			</ul>
 	
-                <p><button class="btn btn-primary btn-sm btn-pill" onclick="openForm()">Book Now</button></p>
+                <p> <button class="btn btn-primary btn-sm btn-pill" onclick="openForm()">Book Now</button></p>
+
+
+
+<div class="form-popup" id="myForm">
+  <form action="/action_page.php" class="form-container">
+    <h2>Query Form</h2>
+    <label for="name"><b>Name</b></label>
+    <input type="text" placeholder="Enter your name" name="email" required>
+   <label for="number"><b>Contact No.</b></label>
+    <input type="text" placeholder="enter number with country code" name="txtName" required>
+    <label for="text"><b>Package</b></label>
+    <input type="password" placeholder="enter package name" name="psw" required>
+<label for="psw"><b>Number of Makeups</b></label>
+    <input type="password" placeholder="enter in numbers" name="psw" required>
+
+    <button type="submit" class="btn">Send</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+</div>
+
+
+
+
+
               </div>
             </div>
             <div class="half bg-img img" style="background-image: url('images/bridal1.jpg');"></div>
@@ -574,23 +574,6 @@ body {font-family: Arial, Helvetica, sans-serif;}
             showCursor: true
             });
             </script>
-
-  <script src="js/main.js"></script>
-
-
-
-<script src="js/typed.js"></script>
-            <script>
-            var typed = new Typed('.typed-words', {
-            strings: ["..."],
-            typeSpeed: 80,
-            backSpeed: 80,
-            backDelay: 4000,
-            startDelay: 1000,
-            loop: true,
-            showCursor: true
-            });
-            </script>
 <script>
 function openForm() {
   document.getElementById("myForm").style.display = "block";
@@ -601,6 +584,8 @@ function closeForm() {
 }
 </script>
 
+
+  <script src="js/main.js"></script>
   
   </body>
 </html>
